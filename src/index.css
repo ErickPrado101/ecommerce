@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@layer base {
+  * {
+    @apply box-border list-none p-0 m-0 scroll-smooth;
+  }
+
+  body {
+    @apply min-h-screen text-secundary bg-primary;
+  }
+}
+
+@layer components {
+  .max-container {
+    max-width: 1520px;
+    margin-inline: auto;
+  }
+
+  .max-base {
+    @apply max-w-3xl mx-auto  my-0;
+  }
+}
+
+@layer utilities {
+  .border-light {
+    border-bottom: 1px solid #54352c4f;
+  }
+
+  .bg-dark {
+    @apply bg-[#402412];
+  }
+
+  .shadow {
+    box-shadow: 0 1px 2px rgba(10, 10, 10, 0.2);
+  }
+
+  .border-anime::after {
+    @apply w-[0%] h-[2px] content-[''] bg-secundary bg-opacity-60 absolute -bottom-[3px] left-0 duration-300 ease-in-out;
+  }
+
+  .border-anime:hover::after {
+    @apply w-full;
+  }
+
+  .appear-item::after {
+    @apply content-[''] absolute top-0 left-0 w-full h-full bg-primary animate-appearTransform;
+  }
+}
