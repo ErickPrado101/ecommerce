@@ -2,7 +2,6 @@ import heroImg from '../assets/img/about-hero.jpg';
 import { AboutSection } from '../components/sections/AboutSection.tsx';
 import { ContactSection } from '../components/sections/ContactSection.tsx';
 import { DesignServicesSection } from '../components/sections/DesignServicesSection.tsx';
-import { NewNostalgiaSection } from '../components/sections/NewNostalgiaSection.tsx';
 import { ProcessSection } from '../components/sections/ProcessSection.tsx';
 import { AboutLinks } from '../constants/data.ts';
 
@@ -44,7 +43,6 @@ export default function About() {
         </div>
       </section>
       <AboutSection />
-      <NewNostalgiaSection />
       <ProcessSection />
       <ContactSection />
       <DesignServicesSection />
